@@ -1,0 +1,1 @@
+<web-view src="https://read.douban.com/reader/ebook/{{urlid}}/">电子书</web-view>

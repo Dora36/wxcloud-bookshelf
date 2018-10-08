@@ -1,0 +1,27 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view>
+<image mode="widthFix" src="{{book.images.large}}"></image>
+</view>
+<view>
+<text>{{book.title}}</text>
+</view>
+
+<view>
+<text>{{book.author[0]}}</text>
+</view>
+<view>
+
+<van-button wx:if="{{book.ebook_url}}"  type="primary" bind:click="ebook"  size="large">阅读电子书</van-button>
+<text  wx:if="{{book.ebook_price}}" >电子书价格：{{book.ebook_price}}</text>
+</view>
+
+<view>
+<van-button type="warning" bind:click="update">更新数据</van-button>
+<van-button type="danger" bind:click="delete">删除本书</van-button>
+</view>
+
+<view>
+<text>{{book.summary}}</text>
+</view>
+
+
